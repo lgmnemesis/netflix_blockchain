@@ -2,7 +2,6 @@ import React, {useState, createContext, useContext} from 'react';
 import {
   Container,
   Inner,
-  Frame,
   Item,
   Title,
   Header,

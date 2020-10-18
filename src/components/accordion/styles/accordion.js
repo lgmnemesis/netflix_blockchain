@@ -31,7 +31,7 @@ export const Item = styled.div`
   margin: auto;
   margin-bottom: 10px;
   width: 100%;
-  max-width: 670px;
+  max-width: 700px;
 
   &:first-of-type {
     margin-top: 3em;

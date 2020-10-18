@@ -15,6 +15,10 @@
     "react-scripts": "3.4.3",
     "styled-components": "^5.2.0"
   },
+  "keywords": [
+    "react",
+    "solidity"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

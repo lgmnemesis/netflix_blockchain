@@ -18,7 +18,7 @@ export default function Signin() {
     return emailAddress === '' || password === '';
   }
 
-  const handleSubmit = (event) => {
+  const handleSignin = (event) => {
     event.preventDefault();
 
     try {
@@ -40,9 +40,9 @@ export default function Signin() {
     <>
       <HeaderContainer>
         <Form>
-          <Form.Title>Sign in</Form.Title>
+          <Form.Title>Sign In</Form.Title>
           {error && <Form.Error>{error}</Form.Error>}
-          <Form.Base onSubmit={handleSubmit} method='POST'>
+          <Form.Base onSubmit={handleSignin} method='POST'>
             <Form.Input
               placeholder='Email address'
               type='email'
@@ -61,7 +61,7 @@ export default function Signin() {
             </Form.Submit>
           </Form.Base>
           <Form.Text>
-            New to Netflix? <Form.Link to={ROUTES.SIGN_IN}>Sign up now.</Form.Link>
+            New to Netflix? <Form.Link to={ROUTES.SIGN_UP}>Sign up now.</Form.Link>
           </Form.Text>
           <Form.TextSmall>
             This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
